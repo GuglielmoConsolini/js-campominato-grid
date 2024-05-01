@@ -1,15 +1,30 @@
-// definisco la variabile che contiene i quadrati
-let grid = document.getElementById("griglia");
+// dichiaro variabile per il pulsante di inizio gioco
+let pulsante = document.querySelector("button")
 
-// ciclo che gestisce la creazione e il click dei quadrati
-for ( let i = 1 ; i <= 100 ; i++ ) {
+// codice per impedire la creazione di altre griglie(mi sono aiutato con la documentazione su internet)
+let giocoAvviato = false
+// click per iniziare il gioco
+pulsante.addEventListener("click",function(){
+    if(!giocoAvviato){
+        avviaGioco()
+        giocoAvviato = true
+    } 
+})
+// funzione di inizio gioco
+function avviaGioco(){
 
-    let cella = creaQuadrato(i);
-    cella.classList.add("square");
-    clickQuadrato(cella,i)
-    grid.append(cella);
+    let grid = document.getElementById("griglia");
+
+    pulsante.removeEventListener("click" , avviaGioco)
+
+    for ( let i = 1 ; i <= 100 ; i++ ) {
+
+        let cella = creaQuadrato(i);
+        cella.classList.add("square");
+        clickQuadrato(cella,i)
+        grid.append(cella);
+    }
 }
-
 // funzione per creare i quadrati nel virtual DOM
 function creaQuadrato(x){
 
@@ -31,3 +46,11 @@ quadrato.addEventListener("click" , function(){
     console.log(quadrato , x )
 })
 }
+
+
+
+
+
+
+
+

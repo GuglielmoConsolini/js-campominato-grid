@@ -6,9 +6,23 @@
 
 body{
     background-color: black;
-    color: crimson;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 5rem;
+}
+
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+button{
+    background-color: red;
+    color: black;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+}
+
+i{
+    padding: 0.5rem;
 }
 
 #griglia{
@@ -26,5 +40,5 @@ body{
 }
 
 .evidenziato{
-    background-color: aqua;
+    background-color: crimson;
 }
