@@ -25,9 +25,11 @@ i{
     padding: 0.5rem;
 }
 
+label{
+    color: crimson;
+}
+
 #griglia{
-    height: 600px;
-    width: 600px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -41,4 +43,19 @@ i{
 
 .evidenziato{
     background-color: crimson;
+}
+
+.griglia-hard{
+    height: 420px;
+    width: 420px;
+}
+
+.griglia-medium{
+    width: 540px;
+    height: 540px;
+}
+
+.griglia-easy{
+    height: 600px;
+    width: 600px;
 }
