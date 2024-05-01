@@ -6,7 +6,7 @@
 
 body{
     background-color: black;
-    color: white;
+    color: crimson;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 5rem;
 }
@@ -23,4 +23,8 @@ body{
     height: 60px;
     width: 60px;
     border: 1px solid white;
+}
+
+.evidenziato{
+    background-color: aqua;
 }
